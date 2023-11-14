@@ -1,0 +1,6 @@
+AVL
+Insert time for AVL Tree: 0.0302352 seconds
+RB
+Insert time for Red-Black Tree: 0.010162 seconds
+Red-Black Tree Deletion Time for 20000 elements: 0.0116426 seconds
+AVL Tree Deletion Time for 20000 elements: 0.039502 seconds
