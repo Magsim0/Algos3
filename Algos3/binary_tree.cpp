@@ -26,7 +26,7 @@ bool BinaryTree::search(const double& value) const {
 }
 
 void BinaryTree::printInOrder() const {
-    inOrderTraversal(root);
+    InorderTraversal(root);
 }
 
 Node* BinaryTree::insertRecursive(Node* current, const double& value) {
@@ -57,14 +57,6 @@ bool BinaryTree::searchRecursive(const Node* current, const double& value) const
     }
     else {
         return searchRecursive(current->right, value);
-    }
-}
-
-void BinaryTree::inOrderTraversal(const Node* current) const {
-    if (current != nullptr) {
-        inOrderTraversal(current->left);
-        std::cout << current->data << " ";
-        inOrderTraversal(current->right);
     }
 }
 

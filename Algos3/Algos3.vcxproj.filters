@@ -41,9 +41,6 @@
     <ClInclude Include="binary_tree.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="tree_traversal.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="avl_tree.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>

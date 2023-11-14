@@ -10,8 +10,6 @@ public:
     Node* findMin(Node* node) const;
     Node* deleteNode(double key, Node* current);
     void deleteNode(double key);
-
-
     void breadthFirstTraversal() const;
     void preOrderTraversal() const;
     void postOrderTraversal() const;
@@ -23,10 +21,7 @@ private:
     void preOrderTraversal(Node* root) const;
     void postOrderTraversal(Node* root) const;
     void inOrderTraversal(Node* root) const;
-
     Node* insertRecursive(Node* current, Node* newNode);
-
-  
     int getBalanceFactor(Node* node) const;
     Node* rotateRight(Node* y);
     Node* rotateLeft(Node* x);

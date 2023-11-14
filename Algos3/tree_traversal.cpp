@@ -1,6 +1,6 @@
 #include <iostream>
-#include <queue> // Для обхода в ширину
-#include <stack> // Для обхода в глубину
+#include <queue> 
+#include <stack> 
 #include "red_black_tree.h"
 #include "binary_tree.h"
 #include "avl_tree.h"
@@ -30,43 +30,43 @@ void BinaryTree::breadthFirstTraversal() const {
     std::cout << std::endl;
 }
 
-void BinaryTree::depthFirstPreorder() const {
-    depthFirstPreorderRecursive(root);
+void BinaryTree::Preorder() const {
+    PreorderTraversal(root);
     std::cout << std::endl;
 }
 
-void BinaryTree::depthFirstPostorder() const {
-    depthFirstPostorderRecursive(root);
+void BinaryTree::Postorder() const {
+    PostorderTraversal(root);
     std::cout << std::endl;
 }
 
-void BinaryTree::depthFirstInorder() const {
-    depthFirstInorderRecursive(root);
+void BinaryTree::Inorder() const {
+    InorderTraversal(root);
     std::cout << std::endl;
 }
 
-void BinaryTree::depthFirstPreorderRecursive(Node* current) const {
+void BinaryTree::PreorderTraversal(Node* current) const {
     if (current == nullptr) return;
 
     std::cout << current->data << " ";
-    depthFirstPreorderRecursive(current->left);
-    depthFirstPreorderRecursive(current->right);
+    PreorderTraversal(current->left);
+    PreorderTraversal(current->right);
 }
 
-void BinaryTree::depthFirstPostorderRecursive(Node* current) const {
+void BinaryTree::PostorderTraversal(Node* current) const {
     if (current == nullptr) return;
 
-    depthFirstPostorderRecursive(current->left);
-    depthFirstPostorderRecursive(current->right);
+    PostorderTraversal(current->left);
+    PostorderTraversal(current->right);
     std::cout << current->data << " ";
 }
 
-void BinaryTree::depthFirstInorderRecursive(Node* current) const {
+void BinaryTree::InorderTraversal(Node* current) const {
     if (current == nullptr) return;
 
-    depthFirstInorderRecursive(current->left);
+    InorderTraversal(current->left);
     std::cout << current->data << " ";
-    depthFirstInorderRecursive(current->right);
+    InorderTraversal(current->right);
 }
 
 
